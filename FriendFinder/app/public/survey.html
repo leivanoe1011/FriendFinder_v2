@@ -1,0 +1,214 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+
+    <title>Survey</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form>
+            <div class="form-group">
+              <label for="friendNameId">Name (Required)</label>
+              <input type="text" class="form-control" id="friendNameId" aria-describedby="CompleteName" placeholder="Enter Full Name">
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+              <label for="photoImageId">Link to Photo Image</label>
+              <input type="text" class="form-control" id="photoImageId" placeholder="Image Link">
+            </div>
+       
+
+            <label class="my-1 mr-2" for="mindBuzzlingId">Your Mind is always buzzling with unexplored ideas and plans</label>
+            <select class="custom-select my-1 mr-sm-2" id="mindBuzzlingId">
+                <option selected value="0">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+
+            <label class="my-1 mr-2" for="experienceImaginationId">Generally speaking, you rely more on your experience than your imagination</label>
+            <select class="custom-select my-1 mr-sm-2" id="experienceImaginationId">
+                <option selected value="0">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+
+            <label class="my-1 mr-2" for="focusUnderPressureId">You find it easy to stay relazed and focused even when there is some pressure</label>
+            <select class="custom-select my-1 mr-sm-2" id="focusUnderPressureId">
+                <option selected value="0">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+
+            <label class="my-1 mr-2" for="sheerCuriosityId">You rarely do something just out of sheer curiosity</label>
+            <select class="custom-select my-1 mr-sm-2" id="sheerCuriosityId">
+                <option selected value="0">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+
+            <label class="my-1 mr-2" for="upsetByPeopleId">People can rarely upset you</label>
+            <select class="custom-select my-1 mr-sm-2" id="upsetByPeopleId">
+                <option selected value="0">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+
+            <label class="my-1 mr-2" for="compasionateId">It is opten difficult for you to relate to other people's feelings</label>
+            <select class="custom-select my-1 mr-sm-2" id="compasionateId">
+                <option selected value="0">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+
+            <label class="my-1 mr-2" for="sensityTruthId">In a discussion, truth should be more important than people's sensitivity</label>
+            <select class="custom-select my-1 mr-sm-2" id="sensityTruthId">
+                <option selected value="0">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+
+            <label class="my-1 mr-2" for="ideasFantasiesId">You rarely get carried away by fantasies and ideas</label>
+            <select class="custom-select my-1 mr-sm-2" id="ideasFantasiesId">
+                <option selected value="0">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+
+            <label class="my-1 mr-2" for="opinionViewsId">You think that everyone's views should be respected regardles of whether they are supported by facts or not</label>
+            <select class="custom-select my-1 mr-sm-2" id="opinionViewsId">
+                <option selected value="0">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+
+            <label class="my-1 mr-2" for="groupEnergyId">You feel more energetic after spending time with a group of people</label>
+            <select class="custom-select my-1 mr-sm-2" id="groupEnergyId">
+                <option selected value="0">Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+
+
+
+            <button id="addFriendBtnId" type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="#resultModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Best Match</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="matchName"></p>
+              <img src="" alt="" id="matchImg">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Modal -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+    crossorigin="anonymous"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+
+
+        $(document).ready(function(){
+            $("#addFriendBtnId").on("click", function(event){
+            
+                event.preventDefault();
+
+                var newFriend = {
+                    name: $("#friendNameId").val().trim(),
+                    imageLink: $("#photoImageId").val().trim(),
+                    question1: $("#mindBuzzlingId").val(),
+                    question2: $("#experienceImaginationId").val(),
+                    question3: $("#focusUnderPressureId").val(),
+                    question4: $("#sheerCuriosityId").val(),
+                    question5: $("#upsetByPeopleId").val(),
+                    question6: $("#compasionateId").val(),
+                    question7: $("#sensityTruthId").val(),
+                    question8: $("#ideasFantasiesId").val(),
+                    question9: $("#opinionViewsId").val(),
+                    question10: $("#groupEnergyId").val()
+                };
+
+                $.post("/addfriend", newFriend)
+                    .then( data => {
+                        console.log("Passed new Friend to API");
+                        // console.log(newFriend);
+                        console.log(data);
+                        var friendName = data[0].person_name;
+                        var friendImg = data[0].image_link;
+
+                        $("#matchName").text(friendName);
+                        $("#matchImg").attr("src", friendImg);
+                        $("#resultModal").modal();
+
+                });
+            
+            });
+            
+        });
+
+    </script>
+
+</body>
+</html>
